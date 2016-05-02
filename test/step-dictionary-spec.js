@@ -61,3 +61,11 @@ describe('StepDictionary.outputReport()', function(){
     }
   });
 });
+
+describe('StepDictionary.getStepThatMatches()', function(){
+  it('should return the step that matches the phrase', function () {
+    var stepDict = new StepDictionary('./test/fixtures');
+    return stepDict.getStepThatMatches('Sam must right 5 wrongs of traditions ignored')
+      .should.have.lengthOf(1);
+  });
+});
