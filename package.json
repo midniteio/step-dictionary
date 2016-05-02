@@ -24,7 +24,6 @@
     "dictionary"
   ],
   "dependencies": {
-    "commander": "^2.9.0",
     "glob": "^7.0.0",
     "lodash": "^4.5.0"
   },
