@@ -1,0 +1,42 @@
+{
+  "name": "step-dictionary",
+  "version": "0.1.0",
+  "description": "Utility for discoverability of Cucumber-js step definitions",
+  "main": "distribution/step-dictionary.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/midniteio/step-dictionary.git"
+  },
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir distribution",
+    "prepublish": "npm run build",
+    "lint": "eslint src test",
+    "unit-test": "mocha --compilers js:babel-register",
+    "test": "npm run lint --silent && npm run unit-test --silent"
+  },
+  "keywords": [
+    "cucumber",
+    "cucumber-js",
+    "steps",
+    "step",
+    "definitions",
+    "discover",
+    "dictionary"
+  ],
+  "dependencies": {
+    "commander": "^2.9.0",
+    "glob": "^7.0.0",
+    "lodash": "^4.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-eslint": "^5.0.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "mocha": "^2.4.5",
+    "chai": "^3.5.0",
+    "eslint": "2.2.0"
+  },
+  "author": "midniteio",
+  "license": "ISC"
+}

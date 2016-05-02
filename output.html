@@ -1,0 +1,240 @@
+
+    <html>
+      <head>
+        <title>
+          Step Dictionary
+        </title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <style>
+          
+    #filter {
+      width: 100%;
+      font-size: 18pt;
+      padding: 10px;
+      background-color: #F0F0F0;
+      border: 1px solid #CCC;
+      color: #0088B5;
+    }
+    .filename-header {
+      font-size: 13pt;
+    }
+    .step-defintion {
+      padding: 20px 5px;
+    }
+    .label {
+      color: #000;
+    }
+    .form-group, .controls, .footer {
+      padding: 20px 0;
+    }
+    .fileToggleButton {
+      float: left;
+      position: relative;
+      margin-right: 10px;
+      border: 1px solid #CCC;
+      background-color: #FFF;
+      font-size: 8pt;
+      color: #AAA;
+    }
+    .fileToggleButton:hover {
+      border: 1px solid #777;
+      color: #333;
+    }
+    .footer {
+      font-size: 10pt;
+    }
+  
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          
+    <h1> Step Dictionary </h1>
+    <div class="form-group">
+      <label for="filter">Search by phrase</label>
+      <input type="text" id="filter" placeholder="">
+    </div>
+  
+          
+    <div class="controls">
+      Available step definitions (8):
+      <a href="javascript:toggleAll('collapse')" id="toggleAll"> Collapse All </a>
+    </div>
+    
+      <div class="file-block">
+        <input type="button" class="fileToggleButton" onClick="toggleDefinitions(this)" value="Toggle">
+        <p class="filename-header">
+          test/fixtures/fixture-steps-1.js
+        </p>
+        <div class="definitions">
+          
+        <dl class="dl-horizontal step-definition" regex="%2F%5EI%20am%20the%20true%20heir%20of%20the%20%22(%5B%5E%22%5D*)%22%20kingdom%24%2F">
+          <dt>Regex</dt>
+          <dd>/^I am the true heir of the "([^"]*)" kingdom$/</dd>
+          <dt>Keyword</dt>
+          <dd>Given</dd>
+          <dt>Parameters</dt>
+          <dd>(kingdom)</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-1.js:2</dd>
+        </dl>
+       
+        <dl class="dl-horizontal step-definition" regex="%2F%5ESam%20must%20right%20(%5Cd%2B)%20wrongs%20of%20traditions%20ignored%24%2F">
+          <dt>Regex</dt>
+          <dd>/^Sam must right (\d+) wrongs of traditions ignored$/</dd>
+          <dt>Keyword</dt>
+          <dd>Then</dd>
+          <dt>Parameters</dt>
+          <dd>(count)</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-1.js:6</dd>
+        </dl>
+       
+        <dl class="dl-horizontal step-definition" regex="%2F%5EI%20prove%20to%20Odin%20my%20worth%24%2F">
+          <dt>Regex</dt>
+          <dd>/^I prove to Odin my worth$/</dd>
+          <dt>Keyword</dt>
+          <dd>When</dd>
+          <dt>Parameters</dt>
+          <dd>()</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-1.js:10</dd>
+        </dl>
+       
+        <dl class="dl-horizontal step-definition" regex="%2F%5EShurima%20arises%20from%20the%20sands%22%24%2F">
+          <dt>Regex</dt>
+          <dd>/^Shurima arises from the sands"$/</dd>
+          <dt>Keyword</dt>
+          <dd>When</dd>
+          <dt>Parameters</dt>
+          <dd>()</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-1.js:14</dd>
+        </dl>
+       
+        <dl class="dl-horizontal step-definition" regex="%2F%5EOur%20glorious%20leader%20returns%24%2F">
+          <dt>Regex</dt>
+          <dd>/^Our glorious leader returns$/</dd>
+          <dt>Keyword</dt>
+          <dd>When</dd>
+          <dt>Parameters</dt>
+          <dd>()</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-1.js:18</dd>
+        </dl>
+      
+        </div>
+      </div>
+    
+      <div class="file-block">
+        <input type="button" class="fileToggleButton" onClick="toggleDefinitions(this)" value="Toggle">
+        <p class="filename-header">
+          test/fixtures/fixture-steps-2.js
+        </p>
+        <div class="definitions">
+          
+        <dl class="dl-horizontal step-definition" regex="%2F%5EA%203spooky5me%20skeltal%24%2F">
+          <dt>Regex</dt>
+          <dd>/^A 3spooky5me skeltal$/</dd>
+          <dt>Keyword</dt>
+          <dd>Given</dd>
+          <dt>Parameters</dt>
+          <dd>()</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-2.js:2</dd>
+        </dl>
+       
+        <dl class="dl-horizontal step-definition" regex="%2F%5Emy%20horn%20goes%20doot%20doot%24%2F">
+          <dt>Regex</dt>
+          <dd>/^my horn goes doot doot$/</dd>
+          <dt>Keyword</dt>
+          <dd>When</dd>
+          <dt>Parameters</dt>
+          <dd>()</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-2.js:6</dd>
+        </dl>
+       
+        <dl class="dl-horizontal step-definition" regex="%2F%5E(%5Cd%2B)%20spooks%20will%20be%20had%24%2F">
+          <dt>Regex</dt>
+          <dd>/^(\d+) spooks will be had$/</dd>
+          <dt>Keyword</dt>
+          <dd>Then</dd>
+          <dt>Parameters</dt>
+          <dd>()</dd>
+          <dt>URI</dt>
+          <dd>fixture-steps-2.js:10</dd>
+        </dl>
+      
+        </div>
+      </div>
+    
+    
+    <script>
+      $('#filter').bind('propertychange change click keyup input paste', function(e) {
+        var newValue = e.currentTarget.value;
+        $('.step-definition').each(function(elem) {
+          var regexString = decodeURIComponent(this.getAttribute('regex'));
+          var searchFilter = newValue.replace(/ +/g, '.*').replace(/".*"/, '".*"');
+          var matchDefinition = new RegExp(searchFilter);
+          if (!matchDefinition.test(regexString)) {
+            this.style.display = 'none';
+          } else {
+            this.style.display = 'block';
+          }
+        });
+
+        $('.file-block').each(function() {
+          var noneFound = true;
+          $(this).find('.step-definition').each(function() {
+            var regexString = decodeURIComponent(this.getAttribute('regex'));
+            var searchFilter = newValue.replace(/ +/g, '.*').replace(/".*"/, '".*"');
+            var matchDefinition = new RegExp(searchFilter);
+            if (!matchDefinition.test(regexString)) {
+              this.style.display = 'none';
+            } else {
+              noneFound = false;
+              this.style.display = 'block';
+            }
+          });
+          console.log('nf: ' + noneFound);
+          if (noneFound) {
+            this.style.display = 'none';
+          } else {
+            this.style.display = 'block';
+          }
+        });
+      });
+    </script>
+  
+    
+    <script>
+      function toggleDefinitions(elem) {
+        var definitions = $(elem).siblings()[1];
+        $(definitions).toggle();
+      }
+
+      function toggleAll(action) {
+        if (action === 'collapse') {
+          $('.definitions').css('display', 'none');
+          $('#toggleAll').text('Show All');
+          $('#toggleAll').attr("href", "javascript:toggleAll('show')");
+        } else {
+          $('.definitions').css('display', 'block');
+          $('#toggleAll').text('Collapse All');
+          $('#toggleAll').attr("href", "javascript:toggleAll('collapse')");
+        }
+      }
+    </script>
+  
+  
+          
+    <div class="footer">
+      This report was generated by the template defined in step-dictionary@0.0.0
+    </div>
+  
+        </div>
+      </body>
+    </html>
+  
