@@ -1,6 +1,6 @@
 {
   "name": "step-dictionary",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utility for discoverability of Cucumber-js step definitions",
   "main": "distribution/step-dictionary.js",
   "repository": {
